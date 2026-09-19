@@ -1,0 +1,15 @@
+{
+  "name": "p3nny-skills",
+  "version": "1.0.0",
+  "description": "Practical skills for coding agents: protect existing work, make consequential assumptions visible, and send bounded tasks to a local model when results are easy to check.",
+  "bin": {
+    "p3nny-skills": "bin/install.js"
+  },
+  "files": [
+    "bin",
+    "skills"
+  ],
+  "engines": {
+    "node": ">=16.7.0"
+  }
+}
