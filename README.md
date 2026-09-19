@@ -28,11 +28,10 @@ project:
 npx p3nny-skills add --global
 ```
 
-Before this package is published to npm, run it straight from GitHub (replace
-`<github-user>` with the account this repo is pushed under):
+Before this package is published to npm, run it straight from GitHub:
 
 ```bash
-npx github:<github-user>/p3nny-skills add
+npx github:itswskkk/p3nny-skills add
 ```
 
 Run `npx p3nny-skills --help` to list available skills and options.
