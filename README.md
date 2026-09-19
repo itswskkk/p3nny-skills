@@ -9,32 +9,24 @@ when their responsibilities fit the task.
 
 ## Install
 
-Add all skills to your project's `.claude/skills` directory:
+Install with the [`skills` CLI](https://github.com/vercel-labs/skills), which
+detects your coding agent (Claude Code, Cursor, Codex, and 75+ others) and
+installs to the right skills directory for it:
 
 ```bash
-npx p3nny-skills add
+npx skills add itswskkk/p3nny-skills
 ```
 
-Add a single skill:
+This lists all three skills and lets you pick which to install. To install a
+specific skill without the picker:
 
 ```bash
-npx p3nny-skills add workspace-sentinel
+npx skills add itswskkk/p3nny-skills --skill workspace-sentinel
 ```
 
-Add to your global `~/.claude/skills` directory instead of the current
-project:
-
-```bash
-npx p3nny-skills add --global
-```
-
-Before this package is published to npm, run it straight from GitHub:
-
-```bash
-npx github:itswskkk/p3nny-skills add
-```
-
-Run `npx p3nny-skills --help` to list available skills and options.
+Add `-g` to install into your global skills directory instead of the current
+project, or `--agent <name>` to target an agent other than the one detected.
+See `npx skills --help` for the full option list.
 
 ## Choose a skill
 
@@ -76,7 +68,7 @@ assumptions.
 
 1. Choose a skill from the table above and read its `SKILL.md`.
 2. Install it into the skill location supported by your agent with
-   `npx p3nny-skills add` (see [Install](#install)), or, without Node, add the
+   `npx skills add itswskkk/p3nny-skills` (see [Install](#install)), or add the
    skill directory manually, or ask a file-capable agent to read the file by
    its path in this checkout.
 3. Give the agent a concrete task, its scope, and the expected result.
